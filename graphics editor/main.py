@@ -70,8 +70,8 @@ root.geometry('800x650')
 root.configure(bg='grey')
 
 # Create entryText
-# entryText1 = StringVar()
-# entryText2 = StringVar()
+entryText1 = StringVar()
+entryText2 = StringVar()
 
 tur = CustomTurtle()
 
@@ -130,13 +130,13 @@ def main():
               background=[('active', 'blue')])
 
     # Create entry
-    # entryText1.set("Param 1")
-    # entryText2.set("Param 2")
-    # width = Entry(root, font=('calibri', 24), width=14, textvariable=entryText1)
-    # height = Entry(root, font=('calibri', 24), width=14, textvariable=entryText2)
-    # width.pack()
-    # height.pack()
-    # var = lambda: print(entryText1.get())
+    entryText1.set("Param 1")
+    entryText2.set("Param 2")
+    width = Entry(root, font=('calibri', 24), width=14, textvariable=entryText1)
+    height = Entry(root, font=('calibri', 24), width=14, textvariable=entryText2)
+    width.pack()
+    height.pack()
+    var = lambda: print(entryText1.get())
 
     # Create buttons
     buttons = {'Line': lines, 'Rectangle': rectangles, 'Circle': circles, 'Polygon': polygons, 'Ellipse': ellipses}
